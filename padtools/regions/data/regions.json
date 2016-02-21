@@ -1,0 +1,17 @@
+{
+  "japan": {
+    "name": "Japan"
+  },
+  "north_america": {
+    "name": "North-America"
+  },
+  "europe": {
+    "name": "Europe"
+  },
+  "korea": {
+    "name": "Korea"
+  },
+  "hong_kong": {
+    "name": "Hong Kong"
+  }
+}

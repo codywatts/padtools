@@ -1,0 +1,30 @@
+[
+  {
+    "ios_url": "http://dl.padsv.gungho.jp/base.json",
+    "android_url": "http://patch-pad.gungho.jp/base_adr.json",
+    "regions": [
+      "japan"
+    ]
+  },
+  {
+    "ios_url": "http://patch-na-pad.gungho.jp/base-na.json",
+    "android_url": "http://patch-na-pad.gungho.jp/base-na-adr.json",
+    "regions": [
+      "north_america", "europe"
+    ]
+  },
+  {
+    "ios_url": "http://dl.padsv.gungho.jp/base.ht-ios.json",
+    "android_url": "http://dl.padsv.gungho.jp/base.ht-adr.json",
+    "regions": [
+      "hong_kong"
+    ]
+  },
+  {
+    "ios_url": "http://patch-kr-pad.gungho.jp/base.kr-ios.json",
+    "android_url": "http://patch-kr-pad.gungho.jp/base.kr-adr.json",
+    "regions": [
+      "korea"
+    ]
+  }
+]
