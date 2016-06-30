@@ -14,12 +14,12 @@ class RegionsMetaClass(type, collections.Set):
 		return len(cls._regions)
 	def load(cls, file_name):
 		with open(file_name, "r") as regions_data_file:
-			regions_data_as_json = json.loads(regions_data_file.read())
-			for region_identifier in regions_data_as_json:
-				region_data = regions_data_as_json[region_identifier]
-				new_region = Region(region_data["name"])
-				cls._regions.append(new_region)
-				setattr(cls, region_identifier, new_region)
+			regions_data_as_json = json.load(regions_data_file)
+		for region_identifier in regions_data_as_json:
+			region_data = regions_data_as_json[region_identifier]
+			new_region = Region(region_data["name"])
+			cls._regions.append(new_region)
+			setattr(cls, region_identifier, new_region)
 
 class Regions(object, metaclass=RegionsMetaClass):
 	pass
