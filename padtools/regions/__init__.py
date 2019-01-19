@@ -24,4 +24,4 @@ class RegionsMetaClass(type, collections.Set):
 class Regions(object, metaclass=RegionsMetaClass):
 	pass
 
-Regions.load(os.path.join(__file__, "..", "data", "regions.json"))
+Regions.load(os.path.join(os.path.dirname(__file__), "data", "regions.json"))
