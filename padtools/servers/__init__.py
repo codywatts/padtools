@@ -20,4 +20,4 @@ class ServersMetaClass(type):
 class Servers(object, metaclass=ServersMetaClass):
 	pass
 
-Servers.load(os.path.join(__file__, "..", "data", "servers.json"))
+Servers.load(os.path.join(os.path.dirname(__file__), "data", "servers.json"))
